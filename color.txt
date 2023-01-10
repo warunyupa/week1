@@ -1,0 +1,11 @@
+light yellow 
+#FFD9A0
+
+light pink
+#FFA1AC
+
+light grey
+#707070
+
+cha thai
+#E4996D
