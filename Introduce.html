@@ -31,6 +31,25 @@
             flex-direction: column;
             height: 100vh;
         }
+
+        header{
+            margin-top: 2rem;
+            width: 640px;
+            padding: 2.5rem;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav{
+            margin-top: 5rem;
+        }
+
+       #description{
+            font-weight: bold;
+            color:blue;
+        }
     </style>
 
 </head>
@@ -64,21 +83,21 @@
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active " id="Home">
                     <img src="/image/keep (10).jpg" class="w-100 d-block" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block" id= "description">
                         <h3>Title</h3>
                         <p>Description</p>
                     </div>
                 </div>
                 <div class="carousel-item" id="AboutMe">
                     <img src="/image/keep (17).jpg" class="w-100 d-block" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block" id="description">
                         <h3>Title</h3>
                         <p>Description</p>
                     </div>
                 </div>
-                <div class="carousel-item" id="">
+                <div class="carousel-item" id="Fav">
                     <img src="/image/keep (9).jpg" class="w-100 d-block" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block" id="description">
                         <h3>Title</h3>
                         <p>Description</p>
                     </div>
@@ -95,7 +114,7 @@
         </div>
     </main>
     <footer>
-        <!-- place footer here -->
+        <p>created by warunyupa @2023</p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
