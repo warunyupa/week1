@@ -53,7 +53,7 @@
 
         a{
             text-decoration: none;
-            text-transform: uppercase;
+            text-transform: lowercase;
             color: black;
         }
 
@@ -69,10 +69,6 @@
             margin-top: 2.5rem;
         }
 
-        .card-title{
-            font-size: small;
-            align-items: start;
-        }
         #aboutme_des{
             text-align: center;
         }
@@ -85,6 +81,11 @@
 
         .Contract .card{
             background-color: transparent;
+            color: white;
+        }
+
+        .Contract .card-title{
+            font-weight: normal;
         }
 
         .Contract ul{
@@ -98,6 +99,16 @@
 
         .Contract img{
             width: 28px;
+        }
+
+        .carousel-inner{
+            height:495px;
+        }
+
+        .carousel-item img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 
@@ -183,7 +194,6 @@
                 </div>
             </div>
         </div>
-        </div>
         <!--Contract-->
         <div class="Contract" id="scrollspyHeading2">
             <div class="card md-3" style="max-width: 640px;">
@@ -199,8 +209,6 @@
                         </li>
                     </ul>
             </div>
-        </div>
-
         </div>
     </main>
     <footer>
