@@ -32,26 +32,24 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-image: url('/image/keep\ \(10\).jpg');
+            /* background-image: url('/image/keep\ \(10\).jpg'); */
         }
 
         header {
             width: 640px;
             padding: 2.5rem;
             margin: 2rem 0 3rem 0;
-            /* background-color: rgba(255, 255, 255, 0.5); */
-            /* border: 2px solid #707070; */
             border-radius: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        header img{
+        header img {
             width: 30px;
         }
 
-        a{
+        a {
             text-decoration: none;
             text-transform: lowercase;
             color: black;
@@ -69,7 +67,12 @@
             margin-top: 2.5rem;
         }
 
-        #aboutme_des{
+        .card-title {
+            color: #707070;
+            text-align: start;
+        }
+
+        #aboutme_des {
             text-align: center;
         }
 
@@ -79,33 +82,30 @@
             color: #FFA1AC;
         }
 
-        .Contract .card{
+        .Contract .card {
             background-color: transparent;
-            color: white;
         }
 
-        .Contract .card-title{
-            font-weight: normal;
-        }
 
-        .Contract ul{
+        .Contract ul {
             list-style-type: none;
             display: flex;
         }
 
-        .Contract ul li{
+        .Contract ul li {
             margin-right: 1.5rem;
         }
 
-        .Contract img{
+        .Contract img {
             width: 28px;
         }
 
-        .carousel-inner{
-            height:495px;
+        .carousel-inner {
+            height: 495px;
+            justify-content: center;
         }
 
-        .carousel-item img{
+        .carousel-item img {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -126,21 +126,29 @@
             </div>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                        <div class="Topic"> 
-                            <a class="nav-link" href="#scrollspyHeading1">
-                                <img src="/image/heart.png" alt="AboutMe-nav">
-                                About Me
-                            </a>
-                        </div>
+                    <div class="Topic">
+                        <a class="nav-link" style="color:#707070; " href="#scrollspyHeading1">
+                            <img src="/image/heart.png" alt="AboutMe-nav">
+                            About Me
+                        </a>
+                    </div>
                 </li>
-                    <li class="nav-item">
-                        <div class="Topic">
-                            <a class="nav-link" href="#scrollspyHeading2">
-                                <img src="/image/chat.png" alt="Contract-nav">
-                                Contract
-                            </a>
-                        </div>
-                    </li>
+                <li class="nav-item">
+                    <div class="Topic">
+                        <a class="nav-link" href="#scrollspyHeading2">
+                            <img src="/image/chat.png" alt="Contract-nav">
+                            Contract
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="Hobby">
+                        <a class="nav-link" href="#scrollspyHeading3">
+                            <img src="/image/heart.png" alt="Contract-nav">
+                            Hobby
+                        </a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -161,7 +169,7 @@
                                 </ol>
                                 <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active">
-                                        <img src="/image/me1.jpg" class="w-100 d-block" alt="First slide">
+                                        <img src="/image/me1-2.png" class="w-100 d-block" alt="First slide">
                                     </div>
                                     <div class="carousel-item">
                                         <img src="/image/me2-2.jpg" class="w-100 d-block" alt="Second slide">
@@ -180,25 +188,118 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="card-body" >
-                                <h2 class="card-title small" style="text-align: start;"> About Me</h5>
-                                <p class="card-text" id="aboutme_des" >
-                                    My name is<br>
-                                    <span>WARUNYUPA LERDSENG.</span><br>
-                                    or Called me<br>
-                                    <span>“Prem”</span>
-                                </p>
+                            <div class="card-body">
+                                <h2 class="card-title "> About Me</h5>
+                                    <p class="card-text" id="aboutme_des">
+                                        My name is<br>
+                                        <span>WARUNYUPA LERDSENG.</span><br>
+                                        or Called me<br>
+                                        <span>“Prem”</span>
+                                    </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Hobby-->
+        <div class="Hobby" id="scrollspyHeading3">
+            <div class="card md-3" style="max-width: 640px;">
+                <h2 class="card-title"> Hobby</h5>
+                    <p class="card-text">
+                        A half of my freetimes spend to watch series.
+
+                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="width:75%">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                                aria-label="First slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card"> <!--To make space each container: style="width:18rem"-->
+                                            <img src="/image/memories-of-alhambra-kor-poster.webp" style="width:98%;"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text text-sm-center">Memories of the alhambra</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" ">
+                                                <img src=" /image/Tell_Me_What_You_Saw-mp1 (1).jpg" style="width:100%;"
+                                            class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text text-sm-center">Tell me what you saw</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" ">
+                                                <img src=" /image/TwentyOne_TwentyFive.jpg" style="width:98%;"
+                                            class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text text-sm-center">Twenty one Twenty five</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card"> <!--To make space each container: style="width:18rem"-->
+                                            <img src="/image/One_Ordinary_Day-p2.jpg" style="width:98%;" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text text-sm-center">One Ordinary Day</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" ">
+                                                <img src="/image/18_Again-Korean_Drama-P1.jpg" style="width:100%;"
+                                            class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text text-sm-center">18 again</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" ">
+                                                <img src="/image/Run-ON-MP01.jpg" style="width:98%;"
+                                            class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text text-sm-center">Run on</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    </p>
+            </div>
+        </div>
         <!--Contract-->
-        <div class="Contract" id="scrollspyHeading2">
+        <div class="Contract" id="scrollspyHeading3">
             <div class="card md-3" style="max-width: 640px;">
                 <h2 class="card-title"> Contract</h5>
-                    <ul>
+                    <ul class="card-text">
                         <li>
                             <img src="/image/email.png" alt="email-icon">
                             <p>warunyupa.ler@student.mahidol.edu</p>
