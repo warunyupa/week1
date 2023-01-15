@@ -32,15 +32,13 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-image: url('/bg/flower-bg.jpg');
             background-position: bottom;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
+            background-image: url('/bg/bg-web.png')
         }
 
         header {
-            width: 640px;
-            padding: 2.5rem;
             margin: 2rem 0 3rem 0;
             border-radius: 18px;
             display: flex;
@@ -53,6 +51,11 @@
             width: 30px;
         }
 
+        .navbar {
+            width: 640px;
+            padding: 2.5rem;
+        }
+
         .nav-link {
             text-decoration: none;
             text-transform: lowercase;
@@ -60,7 +63,7 @@
         }
 
         .nav-link:hover {
-            color:black;
+            color: black;
         }
 
         main {
@@ -73,6 +76,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 2.5rem;
+            background-color: transparent;
         }
 
         .card-title {
@@ -90,22 +94,22 @@
             color: #FFA1AC;
         }
 
-        .card-wrapper img{
-            width: 140px;
-            height: 170px;
+        .card-group{
+            width: 75%;
+            margin-top: -2.5rem;
+            margin-bottom: 1.5rem;
         }
+
         .Contract .card {
             background-color: transparent;
         }
-
-
         .Contract ul {
             list-style-type: none;
             display: flex;
         }
 
         .Contract ul li {
-            margin-right: 1.5rem;
+            margin: 2rem 2rem 2rem 0;
         }
 
         .Contract img {
@@ -123,27 +127,74 @@
             align-items: center;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: #707070;
         }
-        
-        a:hover{
-            color:black;
+
+        a:hover {
+            color: black;
         }
 
-        footer p{
+        footer p {
             margin-top: 3rem;
             font-size: small;
+        }
+
+        @media only screen and (max-width: 640px) {
+            .navbar{
+                width: 440px;
+                padding: 1.5rem;
+            }
+            .navbar img{
+                width:20px
+            }
+            .nav-link{
+                font-size: .7rem;
+            }
+            main{
+                width: 440px;
+            }
+            .card-title{
+                font-size: 1rem;
+            }
+
+        
+            .Aboutme .card{
+                height: 280px;
+            }
+            .Aboutme .card .card-title{
+                margin-top: 10.5rem;
+            }
+            .Aboutme .card td p{
+                margin-top: -8.5rem;
+            }
+
+            .carousel-inner{
+                margin-top: 10.9rem;
+                height: 280px;
+            }
+            #img_me{
+                width:50%;
+            }
+            #des_gp{
+                width: 50%;
+            }
+            span{
+                font-size: .8rem;
+            }
+            td p{
+                font-size: .7rem;
+            }
         }
     </style>
 
 </head>
 
 <body>
-    <header>
+    <header class="shadow p-3">
         <!--Nav bar-->
-        <nav id="navbar-example2" class="navbar sticky-top navbar-light px-3">
+        <nav id="navbar-example2" class="navbar sticky-top navbar-light px-3 ">
             <div class="Brand">
                 <a class="navbar-brand" href="#scrollspyHeading1">
                     <img src="https://cdn-icons-png.flaticon.com/512/9098/9098786.png" alt="Warun-nav" width="30px">
@@ -151,7 +202,7 @@
                 </a>
             </div>
             <ul class="nav nav-pills">
-                <li class="nav-item" id="aboutme">
+                <li class="nav-item">
                     <div class="Topic">
                         <a class="nav-link" href="#scrollspyHeading1">
                             <img src="/image/folder.png" alt="AboutMe-nav">
@@ -184,9 +235,9 @@
                 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
                     tabindex="0">
                     <!--Aboutme-->
-                    <div class="card md-3" style="max-width: 640px;">
+                    <div class="card md-3" style="max-width: 640px; ">
                         <div class="row g-0">
-                            <div class="col-md-7">
+                            <div class="col-md-7" id="img_me">
                                 <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"
@@ -214,20 +265,20 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5" id="des_gp">
                                 <div class="card-body">
                                     <h2 class="card-title "> About Me</h5>
-                                    <!--to alignment middle-->
-                                    <table style="height: 400px;">
-                                        <tr>
-                                            <td class="card-text align-middle" id="aboutme_des">
-                                                <p>My name is<br>
-                                                <span>WARUNYUPA LERDSENG.</span><br>
-                                                <br><br>
-                                                stu(died) computer engineering at mahidol university
-                                            </td>
-                                        </tr>
-                                    </table>
+                                        <!--to alignment middle-->
+                                        <table style="height: 400px;">
+                                            <tr>
+                                                <td class="card-text align-middle" id="aboutme_des">
+                                                    <p>My name is<br>
+                                                        <span>WARUNYUPA LERDSENG.</span><br>
+                                                        <br><br>
+                                                        stu(died) computer engineering at mahidol university
+                                                </td>
+                                            </tr>
+                                        </table>
                                 </div>
                             </div>
                         </div>
@@ -238,110 +289,61 @@
             <div class="Hobby" id="scrollspyHeading2">
                 <div class="card md-3" style="max-width: 640px;">
                     <h2 class="card-title"> Hobby</h5>
-                    <p class="card-text"> A half of my freetimes spend to watch series.
-                        <div id="carouselId" class="carousel slide" data-bs-ride="carousel" style="width:75%">
-                            <ol class="carousel-indicators">
-                                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
-                                    aria-label="First slide"></li>
-                                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="card-wrapper row">
-                                        <div class="col-md-4">
-                                            <div class="card"> <!--To make space each container: style="width:18rem"-->
-                                                <img src="/image/memories-of-alhambra-kor-poster.webp" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <p class="card-text text-sm-center">Memories of the alhambra</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card" ">
-                                                    <img src=" /image/Tell_Me_What_You_Saw-mp1 (1).jpg"  class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <p class="card-text text-sm-center">Tell me what you saw</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card" ">
-                                                    <img src=" /image/TwentyOne_TwentyFive.jpg"  class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <p class="card-text text-sm-center">Twenty one Twenty five</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card-wrapper row">
-                                        <div class="col-md-4">
-                                            <div class="card"> <!--To make space each container: style="width:18rem"-->
-                                                <img src="/image/One_Ordinary_Day-p2.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <p class="card-text text-sm-center">One Ordinary Day</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card">
-                                                    <img src="/image/18_Again-Korean_Drama-P1.jpg" 
-                                                class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <p class="card-text text-sm-center">18 again</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card">
-                                                    <img src="/image/Run-ON-MP01.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <p class="card-text text-sm-center">Run on</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <p class="card-text"> A half of my freetimes spend to watch series. </p>
+                        <p class="card-subtitle  mb-2 text-muted" style="margin-top:2rem; font-size: 8px;" >[Recommended by me]</p>
+                        <div class="card-group">
+                            <div class="card">
+                                <img class="card-img-top" src="image/TwentyOne_TwentyFive.jpg" alt="series1">
+                                <div class="card-body">
+                                    <p class="card-text text-center" style="font-size: 8px;"><small>Twenty-one Twenty-Fivet</small></p>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="card">
+                                <img class="card-img-top" src="/image/memories-of-alhambra-kor-poster.webp"
+                                    alt="series2">
+                                <div class="card-body">
+                                    <p class="card-text text-center" style="font-size: 8px;"><small>Memories of the alhambra</small></p>
+                                </div>
+                            </div>
+                            <div class="card ">
+                                <img class="card-img-top" src="/image/Run-ON-MP01.jpg" alt="series4">
+                                <div class="card-body">
+                                    <p class="card-text text-center" style="font-size: 8px;"><small>Run on</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/image/One_Ordinary_Day-p2.jpg" alt="series3">
+                                <div class="card-body">
+                                    <p class="card-text text-center" style="font-size: 8px;"><small>One Ordinaray Day</small></p>
+                                </div>
+                            </div>
                         </div>
-                        </p>
                 </div>
             </div>
-            <!--Contract-->
-            <div class="Contract" id="scrollspyHeading3">
-                <div class="card md-3" style="max-width: 640px;">
-                    <h2 class="card-title"> Contract</h5>
-                        <ul class="card-text">
-                            <li>
-                                <a href="mailto:warunyupa.ler@student.mahidol.ac.th">
+        </div>
+        <!--Contract-->
+        <div class="Contract" id="scrollspyHeading3">
+            <div class="card md-3" style="max-width: 640px;">
+                <h2 class="card-title"> Contract</h5>
+                    <ul class="card-text">
+                        <li>
+                            <a href="mailto:warunyupa.ler@student.mahidol.ac.th">
                                 <img src="/image/email.png" alt="email-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/warunyupa">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/warunyupa">
                                 <img src="/image/github.png" alt="git-icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/prem.wn/">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/prem.wn/">
                                 <img src="/image/instagram.png" alt="ig-icon">
-                                </a>
-                            </li>
-                        </ul>
-                </div>
+                            </a>
+                        </li>
+                    </ul>
             </div>
+        </div>
         </div>
     </main>
     <footer>
