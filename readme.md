@@ -2,5 +2,5 @@
 ### About this repo
 <ul>
     <li> week1 : in class file <li>
-    <li> <em>introduce : assignment 's class to make your introduce website.</em><li> 
+    <li> <b>introduce : assignment 's class to make your introduce website.</b><li> 
  </ul>
