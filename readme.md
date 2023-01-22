@@ -2,6 +2,6 @@
 
 ### About this repo
 
-* week1 : in class file <li>
-* introduce : assignment 's class to make your introduce website.<li> 
+* week1 : in class file
+* introduce : assignment 's class to make your introduce website.
  
